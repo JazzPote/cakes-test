@@ -24,7 +24,7 @@ const cakes = [
 
 const randomYumFactor = () => Math.floor(Math.random() * 4) + 3;
 
-const cakesWithIDsAndYumFactors = cakes.map((cake) => ({
+const cakesWithIDsAndYumFactors: Cake[] = cakes.map((cake) => ({
   id: uuidv4(),
   yumFactor: randomYumFactor(),
   ...cake,
