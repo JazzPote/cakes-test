@@ -1,4 +1,4 @@
-import db from '../db';
+import * as DAO from '../dao';
 import CakesListScreen from '../components/screens/CakesList';
 
 interface HomePageProps {
@@ -12,9 +12,10 @@ function HomePage({ cakes }: HomePageProps) {
 export default HomePage;
 
 export function getServerSideProps() {
+  const cakes = DAO.getAllCakes();
   return {
     props: {
-      cakes: db,
+      cakes,
     },
   };
 }
