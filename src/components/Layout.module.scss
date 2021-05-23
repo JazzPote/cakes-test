@@ -1,0 +1,17 @@
+@import '../sass/app.scss';
+@import '~~sass-mq';
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+
+.content {
+  @include mq($from: md) {
+    padding: 2rem 8vw;
+  }
+  @include mq($until: md) {
+    padding: 2rem 2rem;
+  }
+}
