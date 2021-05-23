@@ -25,8 +25,7 @@ const postCakeHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     const cake = DAO.insertCake(body);
     return res.json({ data: cake, method: req.method });
   } catch (error) {
-    console.error(error);
-    return res.status(HTTP_CODES.BAD_REQUEST).json(error);
+    return res.status(HTTP_CODES.BAD_REQUEST).send(error.message);
   }
 };
 
