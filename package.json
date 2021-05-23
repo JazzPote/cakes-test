@@ -1,0 +1,41 @@
+{
+  "name": "cakes-test",
+  "version": "1.0.0",
+  "description": "Coding test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts",
+    "lint.fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "antd": "^4.15.6",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.13"
+  },
+  "devDependencies": {
+    "@shopify/eslint-plugin": "^40.2.3",
+    "@types/node": "^15.3.0",
+    "@types/react": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "git-cz": "^4.7.6",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint.fix"
+    }
+  },
+  "author": "Guilhem Forey",
+  "license": "ISC"
+}
