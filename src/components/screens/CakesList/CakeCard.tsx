@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card, Rate } from 'antd';
 import styles from './CakeCard.module.scss';
-import { CAKE_PLACEHOLDER_IMG_URL } from '../../../constants';
+import { CAKE_PLACEHOLDER_IMG_URL } from '../../../utils/constants';
 
 const CakeCard = (props: Cake) => (
   <Card
@@ -18,7 +18,7 @@ const CakeCard = (props: Cake) => (
       </div>
     }
   >
-    <Card.Meta title={props.name} description={props.comment}></Card.Meta>
+    <Card.Meta title={props.name}></Card.Meta>
     <Rate disabled defaultValue={props.yumFactor} />
   </Card>
 );
