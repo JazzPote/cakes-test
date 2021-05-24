@@ -25,9 +25,11 @@ const cakes = [
 const randomYumFactor = () => Math.floor(Math.random() * 4) + 3;
 
 const cakesWithIDsAndYumFactors: Cake[] = cakes.map((cake) => ({
+  ...cake,
   id: uuidv4(),
   yumFactor: randomYumFactor(),
-  ...cake,
+  comment:
+    'This is a generic comment, since this cake was generated automatically when bootstraping the app.',
 }));
 
 export default cakesWithIDsAndYumFactors;
