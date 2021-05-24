@@ -1,0 +1,15 @@
+.headingContainer {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+
+  .cakeImage {
+    border-radius: 100%;
+  }
+
+  .titleRatingContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+}
