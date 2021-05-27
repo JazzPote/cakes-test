@@ -14,7 +14,8 @@ const CakeCard = (props: Cake) => (
           <Image
             alt={`Picture of cake "${props.name}"`}
             src={props.imgUrl || CAKE_PLACEHOLDER_IMG_URL}
-            layout="fill"
+            width={400}
+            height={200}
             objectFit="cover"
           />
         </div>
