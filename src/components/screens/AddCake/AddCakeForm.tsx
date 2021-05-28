@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Formik } from 'formik';
 import { Form, Input, Rate } from 'formik-antd';
-import { Button, message } from 'antd';
+import Message from 'antd/lib/message';
+import Button from 'antd/lib/button';
 import { useRouter } from 'next/router';
 import styles from './AddCakeForm.module.scss';
 import { postCakeValidationSchema as validationSchema } from '../../../utils/validationSchemas';
@@ -33,21 +34,21 @@ function AddCakeForm() {
 
   useEffect(() => {
     if (isLoading) {
-      message.loading({
+      Message.loading({
         content: 'Submitting new cake...',
         key: loadingMessageKey,
       });
     } else {
-      message.destroy(loadingMessageKey);
+      Message.destroy(loadingMessageKey);
     }
   }, [isLoading]);
 
   useEffect(() => {
     if (createCakeOutcome?.success) {
-      message.success('Cake successfully added');
+      Message.success('Cake successfully added');
       router.push('/');
     } else if (createCakeOutcome?.error) {
-      message.error(`Error: ${createCakeOutcome.error}`);
+      Message.error(`Error: ${createCakeOutcome.error}`);
     }
   }, [createCakeOutcome]);
 

@@ -1,6 +1,7 @@
-import { PageHeader, Rate } from 'antd';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import PageHeader from 'antd/lib/page-header';
+import Rate from 'antd/lib/rate';
 import styles from './CakeDetails.module.scss';
 import QuoteComment from './QuoteComment';
 import { CAKE_PLACEHOLDER_IMG_URL } from '../../../utils/constants';

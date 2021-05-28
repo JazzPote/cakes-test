@@ -1,5 +1,8 @@
 import Link from 'next/link';
-import { Col, Row, PageHeader, Button } from 'antd';
+import Button from 'antd/lib/button';
+import Col from 'antd/lib/col';
+import Row from 'antd/lib/row';
+import PageHeader from 'antd/lib/page-header';
 import { PlusOutlined } from '@ant-design/icons';
 import CakeCard from './CakeCard';
 
