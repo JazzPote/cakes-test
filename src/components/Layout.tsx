@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import Layout from 'antd/lib/layout';
 import styles from './Layout.module.scss';
 
 const { Header, Footer, Content } = Layout;

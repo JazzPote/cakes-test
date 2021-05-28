@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import Image from 'next/image';
-import { Card, Rate } from 'antd';
+import Card from 'antd/lib/card';
+import Rate from 'antd/lib/rate';
 import styles from './CakeCard.module.scss';
 import { CAKE_PLACEHOLDER_IMG_URL } from '../../../utils/constants';
-import Link from 'next/link';
 
 const CakeCard = (props: Cake) => (
   <Link href={`/cake/${props.name}`}>

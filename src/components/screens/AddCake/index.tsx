@@ -1,4 +1,4 @@
-import { PageHeader } from 'antd';
+import PageHeader from 'antd/lib/page-header';
 import { useRouter } from 'next/dist/client/router';
 import AddCakeForm from './AddCakeForm';
 
