@@ -1,6 +1,6 @@
 import * as DAO from '../../dao';
 import CakeDetailsScreen from '../../components/screens/CakeDetails';
-import { GetServerSidePropsContext, NextPageContext } from 'next';
+import { GetServerSidePropsContext } from 'next';
 
 interface CakeDetailsPageProps {
   cake: Cake;
