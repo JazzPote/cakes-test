@@ -22,8 +22,10 @@ const CakeCard = (props: Cake) => (
         </div>
       }
     >
-      <Card.Meta title={props.name}></Card.Meta>
-      <Rate disabled defaultValue={props.yumFactor} />
+      <div className={styles.cardContent}>
+        <Card.Meta title={props.name}></Card.Meta>
+        <Rate disabled defaultValue={props.yumFactor} />
+      </div>
     </Card>
   </Link>
 );
