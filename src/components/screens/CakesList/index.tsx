@@ -16,7 +16,7 @@ const CakesListScreen = ({ cakes }: CakesScreenProps) => (
       title="Cakes list"
       subTitle="Very good cakes"
       extra={[
-        <Link href="/add-a-cake">
+        <Link href="/add-a-cake" key="add-a-cake-btn">
           <Button key="addCakeButton" type="primary" icon={<PlusOutlined />}>
             Add Cake
           </Button>
